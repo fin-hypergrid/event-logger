@@ -1,21 +1,21 @@
 {
-  "name": "event-logger",
-  "version": "1.0.0",
-  "description": "Hypegrid starlog plugin",
+  "name": "fin-hypergrid-event-logger",
+  "version": "1.0.4",
+  "description": "Hypegrid starlog plug-in",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joneit/event-logger.git"
+    "url": "git+https://github.com/fin-hypergrid/event-logger.git"
   },
   "author": "Jonathan Eiten",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joneit/event-logger/issues"
+    "url": "https://github.com/fin-hypergrid/event-logger/issues"
   },
-  "homepage": "https://github.com/joneit/event-logger#readme",
+  "homepage": "https://github.com/fin-hypergrid/event-logger#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-browserify": "^0.5.1",
