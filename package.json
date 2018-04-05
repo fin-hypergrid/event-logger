@@ -4,6 +4,7 @@
   "description": "Hypegrid starlog plug-in",
   "main": "index.js",
   "scripts": {
+    "wrap": "browserify index.js | sed \"s/module.exports = eventLoggerPlugin;/fin.Hypergrid.modules['fin-hypergrid-event-logger'] = eventLoggerPlugin;/\" >fin-hypergrid-event-logger.hypermod.js; uglifyjs fin-hypergrid-event-logger.hypermod.js -cmo fin-hypergrid-event-logger.hypermod.min.js; ls -lahL fin-*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,17 +17,6 @@
     "url": "https://github.com/fin-hypergrid/event-logger/issues"
   },
   "homepage": "https://github.com/fin-hypergrid/event-logger#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-browserify": "^0.5.1",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-mirror": "^1.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.6.1",
-    "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "multipipe": "^2.0.1"
-  },
   "dependencies": {
     "starlog": "^1.0.0"
   }
